@@ -1,6 +1,6 @@
 from django.db import models
 
-class Trofeus(models.Model):
+class Trofeus(models.Model): #Definição do modelo Trofeus que é uma classe de python que herda de models.Model(Base para todos os modelos)
   nome = models.CharField(max_length = 50) 
   data = models.DateField()
   descricao = models.TextField()
