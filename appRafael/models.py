@@ -1,4 +1,4 @@
-from django.db import models
+from django.db import models #Importar a biblioteca de modelos
 
 class Trofeus(models.Model): #Definição do modelo Trofeus que é uma classe de python que herda de models.Model(Base para todos os modelos)
   nome = models.CharField(max_length = 50) # É um campo de caracter(string) que representa o nome do trófeu tendo um tamanho máximo de 50 caracteres
