@@ -17,7 +17,7 @@ def create_trofeus(request): #  Função para criar um troféu no sistema
         Trofeus.objects.create(nome=request.POST["nome"], 
                                data=request.POST["data"],
                                descricao=request.POST["descricao"])
-       return redirect("home") # Redireciona para a página "home" após a criação
+        return redirect("home") # Redireciona para a página "home" após a criação
 
     return render(request, "trofeus_form.html") # Renderiza o template "trofeus_form.html" para exibir o formulário de criação de trofeus
 
